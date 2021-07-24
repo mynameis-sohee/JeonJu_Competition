@@ -12,10 +12,10 @@ import datetime
 import os
     
 app=Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI']='postgresql://rfenexdq:CZbuZcBazut5dn0xwcXXvyXo7OuqOzc6@arjuna.db.elephantsql.com:5432/rfenexdq'
+app.config['SQLALCHEMY_DATABASE_URI']=''
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db=SQLAlchemy(app)
-app.secret_key = 'aaa!111/'
+app.secret_key = ''
 
 ####################### 클래스 생성 ###################################
 class purpose(db.Model):
@@ -58,7 +58,7 @@ class abandonment_jeonju(db.Model):
 
 def doAction():
 
-    ServiceKey =unquote('X4n1g5BDRmhABgrgNzNq3OYDVUOeslwuRL6ix9gA8E8rs5OAZUcY19tmS%2FTCLLWHKU7ozh1UTxMA5Pk1EQgk%2BA%3D%3D')
+    ServiceKey =unquote('')
 
     global startday
     startday = date.today()
